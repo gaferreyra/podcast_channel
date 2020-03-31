@@ -231,6 +231,7 @@ body{
     height: auto;
     max-width: 320px;
     flex-direction: column;
+    align-items: center;
 }
 
 .section-nosotros img{
@@ -246,13 +247,22 @@ body{
     margin-bottom: -150px;
 }
 
+.section-nosotros-div-donde-venimos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    text-align: left;
+}
+
 .section-nosotros h3{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 36px;
     letter-spacing: 0;
     line-height: 42px;
     font-weight: normal;
-    width: 60%;
+    width: 100%;
 }
 
 .section-nosotros p{
@@ -281,6 +291,7 @@ body{
     line-height: 42px;
     font-weight: normal;
     margin-bottom: 10px;
+    width: 80%;
 }
 
 .section-invitadas-div-imagenes{
@@ -315,14 +326,24 @@ body{
     line-height: 42px;
     margin-bottom: 20px;
     font-weight: normal;
+    width: 80%;
 }
 
 .section-temas-div-iconos{
     width: 100%;
 }
 
+.section-temas-div-iconos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .section-temas-div-iconos img{
     width: 100%;
+    max-width: 104px;
     max-height: 104px;
     margin-bottom: 5px;
 }
@@ -409,11 +430,208 @@ body{
 }
 
 
+/*xxx*/
+@media only screen and (min-width: 321px){
+
+    body{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .master-div{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    
+    .navegacion {
+        max-width: 500px;
+    }
+
+
+    .navegacion-img-logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .navegacion-div {
+        max-width: 500px;
+    }
+
+    .section-hello{
+        max-width: 500px;
+    }
+
+    .section-hello h2{
+        font-size: 48px;
+        line-height: 63px;
+    }
+
+    .section-hello p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+/*
+    .section-hello button{
+        align-self: flex-start;
+        max-width: 226px;
+        max-height: 56px;
+        font-size: 18px;
+        line-height: 24px;
+    }   
+*/
+    /*seccion episodios*/
+
+    .section-episodios{
+
+        max-width: 500px;
+    }
+
+    .section-episodios h3{
+        font-size: 42px;
+    }
+
+    .section-episodios-div{
+        width: 100%;
+        height: auto;
+    }
+/*
+    .section-episodios-div iframe{
+        width: 100%;
+        max-width: 584px;
+        height: 232px;
+        padding: 10px;
+    }
+*/
+    /*seccion nosotros*/
+    .section-nosotros{
+        max-width: 500px;
+        /*flex-direction: row;
+        justify-content: center;
+        align-items: center;*/
+    }
+
+    .section-nosotros img{
+        width: 100%;
+        max-width: 342.6px;
+        max-height: 450px;
+        bottom: 175px;
+        margin-bottom: -175px;
+    }
+/*
+    .section-nosotros-div-donde-venimos{
+        max-width:464px;
+        height: auto;
+    }
+*/
+    .section-nosotros h3{
+        font-size: 42px;
+    }
+
+    .section-nosotros p{
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    /*seccion invitadas*/
+    .section-invitadas{
+        max-width: 500px;
+    }
+
+    .section-invitadas h3{
+        font-size: 42px;
+        /*letter-spacing: 0;
+        width: 80%;
+        height: auto;
+        text-align: left;*/
+    }
+
+   /* .section-invitadas-div-imagenes{
+        display: flex;
+        flex-wrap: wrap;  
+        width: 100%;  
+        height: auto;
+    }*/
+    
+    .section-invitadas-div-imagenes img{
+       /* 
+        height: 100%;
+        max-width: 408px;*/
+        width: 100%;
+        max-height: 310px;
+        /*margin-bottom: 0;*/
+    }
+
+    /*seccion temas*/
+    .section-temas{
+        max-width: 500px;
+    }
+
+    .section-temas h3{
+        font-size: 42px;
+    }
+
+    /*.section-temas-div-iconos{
+        display: flex;
+        flex-wrap: wrap;  
+        width: 100%;  
+        height: auto;
+    }*/
+   /*
+    .section-temas-div-iconos div, img{
+        width: 25%;
+        max-width: 480px;
+        max-height: 364px;
+    }
+*/
+    /*seccion novedades*/
+
+    .section-novedades{
+        max-width: 500px;
+    }
+
+    .section-novedades p{
+        font-size: 39px;
+    }
+/*
+    .section-novedades button{
+        max-width: 345px;
+        max-height: 56px;
+        font-size: 18px;
+        line-height: 24px;
+    }*/
+
+    /*pie*/
+    .pie{
+        max-width: 500px;
+    }
+
+    .pie p{
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 25px;
+        /*width: 55%;*/
+    }
+/*
+    .pie-div{
+        width: 25%;
+    }
+    */
+    .pie-div i{
+        font-size: 17px;
+    }
+}
+
+
 @media only screen and (min-width: 500px){
 
     body{
         width: 100%;
-        max-width: 1440px;
+        max-width: 2200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .master-div{
@@ -552,7 +770,8 @@ body{
     }
 
     .section-nosotros-div-donde-venimos{
-        width: 464px;
+        width: 100%;
+        max-width:464px;
         height: auto;
     }
 
@@ -623,8 +842,6 @@ body{
    
     .section-temas-div-iconos div, img{
         width: 25%;
-        max-width: 480px;
-        max-height: 364px;
     }
 
     /*seccion novedades*/
