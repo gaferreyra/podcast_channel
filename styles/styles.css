@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'IBM Plex mono', monospace;
     color: #060A24;
     font-weight: normal;
@@ -221,6 +220,12 @@ body{
     width: 100%;
     max-width: 298px;
     height: 225px;
+    border-width: 0;
+    border-color: transparent;
+    border-style: none;
+    border-image: none;
+    /*frameborder = 0;
+    allowtransparency= true;*/
 }
 
 
