@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'IBM Plex mono', monospace;
     color: #060A24;
-    font-weight: normal;
 }
 
 
@@ -85,6 +84,7 @@ body{
 
 .navegacion-div li a {
     font-family: 'IBM Plex mono', monospace;
+    font-weight: normal;
     display: block;
     text-decoration: none;
     margin-bottom: 24px;
@@ -120,12 +120,12 @@ body{
 }
 
 .section-hello h2{
-    font-family: 'IBM Plex Sans',sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
     font-size: 36px;
     color: #060A24;
     letter-spacing: 0;
     line-height: 42px;
-    font-weight: normal;
     width: auto;
     margin-bottom: 15px;
 }
@@ -158,11 +158,10 @@ body{
     max-width: 288px;
     max-height: 48px;
     background-color: #00F3BB;
-    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
     font-size: 16px;
     letter-spacing: 0;
     text-align: center;
-    font-weight: bolder;
     line-height: 22px;
     align-self: center;
     justify-content: center;
@@ -184,28 +183,27 @@ body{
 .section-episodios{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 1203.5px;
+    max-height: 800px;
     max-width: 320px;
     background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     padding-top: 200px;
     padding-bottom: 200px;
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
 }
 
 .section-episodios h3{
-    font-family: 'IBM Plex Sans',sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
     font-size: 36px;
     color: #FFFFFF;
     letter-spacing: 0;
     line-height: 42px;
-    font-weight: normal;
     width: 80%;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .section-episodios-div{
@@ -264,17 +262,19 @@ body{
 
 .section-nosotros h3{
     font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
     font-size: 36px;
     letter-spacing: 0;
-    line-height: 42px;
-    font-weight: normal;
+    line-height: 42px;    
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .section-nosotros p{
     font-size: 14px;
     letter-spacing: 0;
     line-height: 22px;
+    font-weight: 500;
 }
 
 /*seccion invitadas*/
@@ -291,12 +291,13 @@ body{
 }
 
 .section-invitadas h3{
-    font-family: 'IBM Plex Sans',sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
     font-size: 36px;
     letter-spacing: 0;
     line-height: 42px;
-    font-weight: normal;
-    margin-bottom: 10px;
+    scroll-margin-top: 30%;
+    margin-bottom: 30px;
     width: 80%;
 }
 
@@ -326,12 +327,12 @@ body{
 }
 
 .section-temas h3{
-    font-family: 'IBM Plex Sans',sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
     font-size: 36px;
     letter-spacing: 0;
     line-height: 42px;
     margin-bottom: 20px;
-    font-weight: normal;
     width: 80%;
 }
 
@@ -355,11 +356,11 @@ body{
 }
 
 .section-temas-div-iconos p{
-    font-family: 'IBM Plex Sans - SemiBold';
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
     font-size: 24px;
     letter-spacing: 0;
     text-align: center;
-    font-weight: bolder;
     margin-bottom: 20px;
 }
 
@@ -382,6 +383,7 @@ body{
 
 .section-novedades p{
     font-family: 'IBM Plex Sans',sans-serif;
+    font-weight: normal;
     font-size: 36px;
     color: #FFFFFF;
     letter-spacing: 0;
@@ -393,8 +395,6 @@ body{
 .section-novedades button{
     max-width: 288px;
     max-height: 48px;
-    background: #00F3BB;
-    font-family: 'IBM Plex Mono - Medium';
     font-size: 16px;
     letter-spacing: 0;
     text-align: center;
@@ -477,19 +477,11 @@ body{
         font-size: 15px;
         line-height: 23px;
     }
-/*
-    .section-hello button{
-        align-self: flex-start;
-        max-width: 226px;
-        max-height: 56px;
-        font-size: 18px;
-        line-height: 24px;
-    }   
-*/
+
+
     /*seccion episodios*/
 
     .section-episodios{
-
         max-width: 500px;
     }
 
@@ -599,13 +591,7 @@ body{
     .section-novedades p{
         font-size: 39px;
     }
-/*
-    .section-novedades button{
-        max-width: 345px;
-        max-height: 56px;
-        font-size: 18px;
-        line-height: 24px;
-    }*/
+
 
     /*pie*/
     .pie{
@@ -740,8 +726,10 @@ body{
     /*seccion episodios*/
 
     .section-episodios{
-        min-height: 1042.6px;
+        flex-wrap: nowrap;
+        max-height: 1042.6px;
         max-width: 1440px;
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
     }
 
     .section-episodios h3{
@@ -772,8 +760,8 @@ body{
         width: 100%;
         max-width: 457.6px;
         max-height: 660px;
-        bottom: 200px;
-        margin-bottom: -200px;
+        bottom: 170px;
+        margin-bottom: -170px;
     }
 
     .section-nosotros-div-donde-venimos{
@@ -784,6 +772,7 @@ body{
 
     .section-nosotros h3{
         font-family: 'IBM Plex Sans',sans-serif;
+        font-weight: normal;
         font-size: 48px;
         letter-spacing: 0;
         width: 100%;
